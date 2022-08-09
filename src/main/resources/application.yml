@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.31.81:3306/testConnection?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  redis:
+    database: 0
+    host: 192.168.31.183
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 10
+        max-wait: -1
+        min-idle: 2
+    password: ''
+    port: 6379
+    timeout: 6000
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+server:
+  port: 8888
+
