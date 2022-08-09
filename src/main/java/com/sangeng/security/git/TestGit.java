@@ -7,6 +7,7 @@ package com.sangeng.security.git;
  */
 public class TestGit {
     public static void main(String[] args) {
+        System.out.println("另一个分支处理");
         System.out.println("==================1");
     }
 }
